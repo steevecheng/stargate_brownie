@@ -1,5 +1,5 @@
-from brownie import Router, accounts
+from brownie import MockToken, accounts
 
 
 def main():
-    return Router.deploy({"from": accounts.load("0")})
+    return MockToken.deploy("Token", "TKN", {"from": accounts.load("0")})
