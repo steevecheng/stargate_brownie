@@ -1,0 +1,19 @@
+{
+    "restructuredtext.confPath": "${workspaceFolder}\\docs",
+    "python.defaultInterpreterPath": ".venv\\Scripts\\python.exe",
+    "python.autoComplete.extraPaths": [
+        "."
+    ],
+    "python.analysis.extraPaths": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true
+    },
+    "solidity.compileUsingRemoteVersion": "v0.8.0+commit.c7dfd78e",
+}
