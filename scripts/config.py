@@ -14,5 +14,26 @@ stargateConfig = {
         "2": "500000",
         "3": "500000",
         "4": "500000"
+    },
+}
+
+pool= {
+    "USDC": {
+        "pid": 1,
+        "decimals": 18,
+        "name": "USDC",
+        "symbol": "USDC"
+    },
+    "USDT": {
+        "pid": 2,
+        "decimals": 18,
+        "name": "USDT",
+        "symbol": "USDT"
+    },
+    "BUSD": {
+        "pid": 5,
+        "decimals": 18,
+        "name": "BUSD",
+        "symbol": "BUSD"
     }
 }
