@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "generate-contract-interface": "^0.1.13"
+  }
+}
