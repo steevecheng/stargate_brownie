@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
-pragma solidity 0.8.0;
+pragma solidity ^0.8.0;
 
 library ExcessivelySafeCall {
     uint256 constant LOW_28_MASK =
