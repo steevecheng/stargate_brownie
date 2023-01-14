@@ -10,6 +10,7 @@
             "request": "launch",
             "program": ".venv/Scripts/brownie.exe",
             "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
             "args": ["run", "${fileBasename}"]
         },
         {

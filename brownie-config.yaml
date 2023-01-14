@@ -9,7 +9,7 @@ project_structure:
     tests: tests
 
 networks:
-    default: development
+    default: polygonmain
     development:
         gas_limit: max
         gas_buffer: 1

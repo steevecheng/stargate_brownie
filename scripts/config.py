@@ -37,3 +37,18 @@ pool= {
         "symbol": "BUSD"
     }
 }
+
+address = {
+    "ethereum": {
+        "Endpoint.sol": "0x66A71Dcef29A0fFBDBE3c6a460a3B5BC225Cd675"
+    },
+    "bsc": {
+        "Endpoint.sol": "0x3c2269811836af69497E5F486A85D7316753cf62"
+    },
+    "avalanche": {
+        "Endpoint.sol": "0x3c2269811836af69497E5F486A85D7316753cf62"
+    },
+    "polygon": {
+        "Endpoint.sol": "0x3c2269811836af69497E5F486A85D7316753cf62"
+    }
+}
