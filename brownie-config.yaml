@@ -9,7 +9,7 @@ project_structure:
     tests: tests
 
 networks:
-    default: polygonmain
+    default: avax-test
     development:
         gas_limit: max
         gas_buffer: 1
