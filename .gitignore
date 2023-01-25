@@ -8,3 +8,4 @@ build/
 reports/
 .venv
 other
+bin

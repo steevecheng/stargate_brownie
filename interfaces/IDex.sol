@@ -1,12 +1,6 @@
 // SPDX-License-Identifier: BUSL-1.1
 
 pragma solidity ^0.8.0;
-pragma abicoder v2;
-
-// imports
-import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "../interfaces/IStargateToken.sol";
 
 interface IDex {
 
