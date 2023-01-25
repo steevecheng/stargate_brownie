@@ -21,14 +21,16 @@ testnetEndpoint = {
     "goerli": {
         "chainId": 10021,
         "endpoint": "0xbfD2135BFfbb0B5378b56643c2Df8a87552Bfa23",
+        "stargate": "0xe0D6deF971250715Cb97794D4105CBf28f389BB8",
     },
     "bsc-test": {
         "chainId": 10002,
         "endpoint": "0x6Fcb97553D41516Cb228ac03FdC8B9a0a9df04A1"
     },
     "fuji": {
-        "chainId": 10008,
-        "endpoint": "0x93f54D755A063cE7bB9e6Ac47Eccc8e33411d706"
+        "chainId": 10006,
+        "endpoint": "0x93f54D755A063cE7bB9e6Ac47Eccc8e33411d706",
+        "stargate": "0x1Cb74544AaafBA3350C0E1149DDb304Bb0A0ff61"
     },
     "mumbai": {
         "chainId": 10009,

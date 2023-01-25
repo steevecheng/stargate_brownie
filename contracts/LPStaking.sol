@@ -84,6 +84,14 @@ contract LPStaking is Ownable {
         return poolInfo.length;
     }
 
+    function getPoolInfo(uint256 _pid) external view returns (IERC20) {
+        return poolInfo[_pid].lpToken;
+    }
+
+    function getAllocPoint(uint256 _pid) external view returns (uint256) {
+        return poolInfo[_pid].allocPoint;
+    }
+
     /// @notice handles adding a new LP token (Can only be called by the owner)
     /// @param _allocPoint The alloc point is used as the weight of the pool against all other alloc points added.
     /// @param _lpToken The lp token address
