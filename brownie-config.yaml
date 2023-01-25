@@ -9,7 +9,7 @@ project_structure:
     tests: tests
 
 networks:
-    default: avax-test
+    default: goerli
     development:
         gas_limit: max
         gas_buffer: 1

@@ -61,6 +61,14 @@ contract Vault is OFT, OrderTaker {
         totalPendingInvests += amountSD;
     }
 
+    function pendingInverst(address _owner) external view returns(uint256){
+        return pendingInvests[_owner];
+    }
+
+    function pendingHarvest(address _owner, uint16 _pid) external view returns(uint256) {
+        return pendingHarvests[_owner][_pid];
+    }
+
     function requestHarvest(uint256 amountIM, uint16 poolIndex) external {
         address _harvestor = msg.sender;
         pendingHarvestors.push(_harvestor);
