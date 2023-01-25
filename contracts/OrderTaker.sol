@@ -9,8 +9,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
 // interfaces
-import "./interfaces/IStargateRouter.sol";
-import "./interfaces/IStargateLpStaking.sol";
+import "../interfaces/IStargateRouter.sol";
+import "../interfaces/IStargateLpStaking.sol";
 
 contract OrderTaker is Ownable {
     using SafeMath for uint256;
