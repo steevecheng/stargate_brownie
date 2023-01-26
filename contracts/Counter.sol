@@ -18,7 +18,8 @@ contract Counter is ERC20, NonblockingLzApp {
         string memory _name,
         string memory _symbol,
         address _endpoint,
-        uint256 _mainChainId
+        uint256 _mainChainId,
+        uint256 _initialSupply
     ) ERC20 (
         _name,
         _symbol
@@ -28,14 +29,15 @@ contract Counter is ERC20, NonblockingLzApp {
     {
         endpoint = ILayerZeroEndpoint(_endpoint);   
         if(_mainChainId == ILayerZeroEndpoint(_endpoint).getChainId()){
-            _mint(msg.sender, initialSupply);
+            _mint(msg.sender, _initialSupply);
+            initialSupply = _initialSupply;
         }
         mainChainId = _mainChainId;
     }
 
     function incrementCounter(uint16 _dstChainId, uint _nativeFee) public payable {
         // _lzSend calls endpoint.send()
-        _lzSend(_dstChainId, bytes("hello"), payable(msg.sender), address(0x0), bytes("0x001"), _nativeFee);
+        _lzSend(_dstChainId, bytes(""), payable(msg.sender), address(0x0), bytes(""), _nativeFee);
     }
 
     function _nonblockingLzReceive(uint16 _srcChainId, bytes memory _srcAddress, uint64 _nonce, bytes memory _payload) internal override {

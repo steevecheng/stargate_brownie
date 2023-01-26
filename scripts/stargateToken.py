@@ -4,7 +4,7 @@ def main():
     StargateTokenContract = StargateToken.deploy(
         config.stargateConfig["stargateToken"]["name"],
         config.stargateConfig["stargateToken"]["symbol"],
-        config.testnetEndpoint["fuji"]["endpoint"],
+        config.testnetEndpoint["mumbai"]["endpoint"],
         config.stargateConfig["stargateToken"]["mainEndpointId"],
         config.stargateConfig["stargateToken"]["initialSupplyMainEndpoint"],
         {"from": accounts.load("0")}

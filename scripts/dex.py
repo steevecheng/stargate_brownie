@@ -1,7 +1,7 @@
-from brownie import accounts, web3, interface, UsdcSTG, UsdtSTG
+from brownie import accounts, web3, interface, UsdcSTG, UsdtSTG, convert
 
 def main():
-    chain = "fuji"
+    chain = "mumbai"
     token = "usdt"
     tokenInfo = {
         "goerli": {
@@ -13,6 +13,11 @@ def main():
             "usdc": "0x4A0D1092E9df255cf95D72834Ea9255132782318",
             "usdt": "0x134Dc38AE8C853D1aa2103d5047591acDAA16682",
             "stgToken": "0x1Cb74544AaafBA3350C0E1149DDb304Bb0A0ff61",
+        },
+        "mumbai": {
+            "usdc": "0x742DfA5Aa70a8212857966D491D67B09Ce7D6ec7",
+            "usdt": "0x6Fc340be8e378c2fF56476409eF48dA9a3B781a0",
+            "stgToken": "0x19Bda030d8520c5d4A6de15f5B5e127c25D8ca8A",
         },
         "initercmint": 10000000000000,
         "initstgmint": 6000000000000000000000000,

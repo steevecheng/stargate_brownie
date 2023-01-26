@@ -34,7 +34,8 @@ testnetEndpoint = {
     },
     "mumbai": {
         "chainId": 10009,
-        "endpoint": "0xf69186dfBa60DdB133E91E9A4B5673624293d8F8"
+        "endpoint": "0xf69186dfBa60DdB133E91E9A4B5673624293d8F8",
+        "stargate": "",
     },
     "arbitrum-goerli": {
         "chainId": 10143,

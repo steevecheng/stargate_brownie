@@ -35,4 +35,7 @@ interface IVault {
     function sendFrom(address _from, uint16 _dstChainId, bytes calldata _toAddress, uint _amount, address payable _refundAddress, address _zroPaymentAddress, bytes calldata _adapterParams) external payable;
     
     function setUseCustomAdapterParams(bool _useCustomAdapterParams) external;
+
+    function getPendingInvestAmount(address user) external view returns(uint256);
+    function getPendingHarvestAmount(address user, uint16 _poolIndex) external view returns(uint256);
 }
