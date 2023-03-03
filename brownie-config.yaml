@@ -9,7 +9,7 @@ project_structure:
     tests: tests
 
 networks:
-    default: development
+    default: goerli
     development:
         gas_limit: max
         gas_buffer: 1

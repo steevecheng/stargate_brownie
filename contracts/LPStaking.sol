@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BUSL-1.1
 
-pragma solidity 0.8.0;
+pragma solidity ^0.8.0;
 
 // imports
 import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
@@ -82,6 +82,14 @@ contract LPStaking is Ownable {
 
     function poolLength() external view returns (uint256) {
         return poolInfo.length;
+    }
+
+    function getPoolInfo(uint256 _pid) external view returns (IERC20) {
+        return poolInfo[_pid].lpToken;
+    }
+
+    function getAllocPoint(uint256 _pid) external view returns (uint256) {
+        return poolInfo[_pid].allocPoint;
     }
 
     /// @notice handles adding a new LP token (Can only be called by the owner)

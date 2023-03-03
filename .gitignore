@@ -1,8 +1,11 @@
 **/__pycache__
 **/.pytest_cache
+**/node_modules
 .env
 .history
 .hypothesis/
 build/
 reports/
 .venv
+other
+bin
